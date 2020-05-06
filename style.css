@@ -1,0 +1,10 @@
+#box{
+    background: cyan;
+    padding: 5%;
+    width: 20%;
+}
+
+#box:hover{
+    width: 100%;
+    transition: 1s;
+}
