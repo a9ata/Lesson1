@@ -1,9 +1,9 @@
-html.exp1, body.exp2{
+.exp1, .exp2{
     margin: 0;
     height: 100%;
 }
 
-body.exp2{
+.exp2{
     display: flex;
     justify-content: center;
     align-items: center;
