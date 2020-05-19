@@ -1,4 +1,4 @@
-var containerone = document.getElementsByClassName("containerone")[0];
+var container = document.getElementsByClassName("container")[0];
 var row, column, square;
 
 for(row = 0; row < 8; ++row){
@@ -8,6 +8,6 @@ for(row = 0; row < 8; ++row){
             square.classList.add("black")
         }
         square.classList.add("kvadratik");
-        containerone.appendChild(square);
+        container.appendChild(square);
     }
 }
