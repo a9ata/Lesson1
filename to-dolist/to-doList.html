@@ -19,6 +19,26 @@
     </style>
 </head>
 <body>
-    <input type="text">
+    <div>
+        <ol id="spisok">
+        </ol>
+    <input type="text" class="vvod">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(".vvod").on("keydown", function(event){
+            var item;
+            if(event.which == 13){
+                item = $("<li></li>");
+                item.html($(this).val());
+                $(this).val("");
+                item.on("click", function(){
+                    $(this).remove();
+                })
+                $("#spisok").append(item);
+            }
+        });
+    </script>
 </body>
 </html>
