@@ -21,7 +21,7 @@ function proceedAnw(event){
     questionCouter++;
     if(questionCouter == Questions.length){
         alert("Тест пройден");
-        document.body.innerHTML = "<h1>Правильных ответов: " + correct + "/" + Question.lenght + "</h1>";
+        document.body.innerHTML = "<h1>Правильных ответов: " + correct + "/" + Questions.length + "</h1>";
     }else{
         loadQuestion();
     }
